@@ -1,5 +1,10 @@
 package com.example.reponsitory;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public class EmployeeReponsitory {
+import net.javaguides.springboot.model.Employee;
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Long>{
 
 }
